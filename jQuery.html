@@ -5,6 +5,7 @@
     </head>
     <body>
     <script>
+        //using append to define the content of my document
     $(document).ready(function(){
         $("html").append(
             "<body>\
@@ -17,16 +18,16 @@
                         </div>\
                         </div>\
                     </body>"
-        );
-        $("#2").css({"color":"red"});
+        );// using a header and 3 paragraph with id
+        $("#2").css({"color":"red"});//make middle paragraph red
         $("#3").click(function(){
             $('h1').hide("slow");
 
-        });
+        });//this function will hide h1 after clicking on third paragraph
 
         $("#1").click(function(){
             console.log("You clicked paragraph 1");
-        });
+        });//it will print the sentence after click on the first paragraph on console
     });
     </script>
   
